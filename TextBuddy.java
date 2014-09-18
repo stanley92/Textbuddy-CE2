@@ -153,7 +153,7 @@ public class TextBuddy {
 			String fileName) {
 
 		if (texts.size() == 0) {
-			showUser
+			showUser(String.format(MSG_EMPTY_FILE, fileName));
 			//System.out.println(fileName + " is empty");
 		} else {
 			String searchItem;
@@ -163,7 +163,7 @@ public class TextBuddy {
 			for (int i = 0; i < texts.size(); i++) {
 				if (texts.get(i).toUpperCase()
 						.contains(searchItem.toUpperCase())) {
-					showUser
+					showUser(String.format(DISPLAY_FORMAT, i+1, texts.get(i)));
 					//System.out.println(i + 1 + ". " + texts.get(i));
 				}
 			}
