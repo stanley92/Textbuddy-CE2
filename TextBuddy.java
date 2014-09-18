@@ -65,14 +65,22 @@ public class TextBuddy {
 		ArrayList<String> texts = new ArrayList<String>();
 		String fileName;
 
-		if (args.length < 1) {
-			fileName = sc.next();
-			fileObject = new File(fileName);
-		} else {
-			fileName = args[0];
-			fileObject = new File(fileName);
-		}
+		fileName = fileName(args, sc);
+		determineNewFileName(sc, texts);
+		welcomeUser(fileName);
+		command_type(sc, texts, fileName);
+		saveData(texts, fileObject);
+		sc.close();
+	}
 
+	private static void welcomeUser(String fileName) {
+		showUser(String.format(MSG_WELCOME, fileName));
+		//System.out.println("Welcome to TextBuddy. " + fileName
+				//+ " is ready for use");
+	}
+
+	private static void determineNewFileName(Scanner sc, ArrayList<String> texts)
+			throws IOException {
 		// Create new text file
 		if (!fileObject.exists()) {
 			fileObject.createNewFile();
@@ -92,16 +100,18 @@ public class TextBuddy {
 			  	}
 			  }
 		 }
-		
-		showUser(String.format(MSG_WELCOME, fileName));
-		//System.out.println("Welcome to TextBuddy. " + fileName
-				//+ " is ready for use");
+	}
 
-		command_type(sc, texts, fileName);
-
-		saveData(texts, fileObject);
-
-		sc.close();
+	private static String fileName(String[] args, Scanner sc) {
+		String fileName;
+		if (args.length < 1) {
+			fileName = sc.next();
+			fileObject = new File(fileName);
+		} else {
+			fileName = args[0];
+			fileObject = new File(fileName);
+		}
+		return fileName;
 	}
 
 	private static void command_type(Scanner sc, ArrayList<String> texts,
@@ -208,11 +218,11 @@ public class TextBuddy {
 
 	private static void addText(Scanner sc, ArrayList<String> texts,
 			String fileName) {
-		String display;
-		display = sc.nextLine();
-		display = display.trim();
-		texts.add(display);
-		showUser(String.format(MSG_ADD, fileName, display));
+		String text;
+		text = sc.nextLine();
+		text = text.trim();
+		texts.add(text);
+		showUser(String.format(MSG_ADD, fileName, text));
 		//System.out.println("added to " + fileName + " \"" + display + "\"");
 	}
 	
