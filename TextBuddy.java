@@ -58,7 +58,7 @@ public class TextBuddy {
 	
 	private static final String DISPLAY_FORMAT = "%d. %s";
 	
-	static File file_object = null;
+	static File fileObject = null;
 
 	public static void main(String[] args) throws IOException {
 		Scanner sc = new Scanner(System.in);
@@ -67,22 +67,22 @@ public class TextBuddy {
 
 		if (args.length < 1) {
 			fileName = sc.next();
-			file_object = new File(fileName);
+			fileObject = new File(fileName);
 		}
 
 		else {
 			fileName = args[0];
-			file_object = new File(fileName);
+			fileObject = new File(fileName);
 		}
 
 		// Create new text file
-		if (!file_object.exists()) {
-			file_object.createNewFile();
+		if (!fileObject.exists()) {
+			fileObject.createNewFile();
 			// System.out.print(fileName + " has been created \n");
 		}
 
 		// To modify an existing text file
-		else if (file_object.exists()) {
+		else if (fileObject.exists()) {
 			System.out.print("Would you like to load and edit file? (Y/N)");
 			String choice = sc.nextLine();
 			if (choice.equalsIgnoreCase("N")) {
@@ -91,7 +91,7 @@ public class TextBuddy {
 
 			else if (choice.equalsIgnoreCase("Y")) {
 				// To copy existing data to an arraylist
-				String[] previousData = oldData(file_object);
+				String[] previousData = oldData(fileObject);
 				for (int i = 0; i < previousData.length; i++) {
 					texts.add(previousData[i]);
 				}
@@ -103,7 +103,7 @@ public class TextBuddy {
 
 		command_type(sc, texts, fileName);
 
-		saveData(texts, file_object);
+		saveData(texts, fileObject);
 
 		sc.close();
 	}
