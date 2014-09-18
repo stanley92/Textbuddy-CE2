@@ -133,6 +133,8 @@ public class TextBuddy {
 				sortTexts(texts, fileName);
 			} else if (command.equals("search")) {
 				searchTexts(sc, texts, fileName);
+			} else if (command.equals("exit")) {
+				return;
 			} else {
 				showUser(MSG_INVALID_COMMAND);
 				//System.out.println("Invalid Command!");
