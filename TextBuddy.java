@@ -68,9 +68,7 @@ public class TextBuddy {
 		if (args.length < 1) {
 			fileName = sc.next();
 			fileObject = new File(fileName);
-		}
-
-		else {
+		} else {
 			fileName = args[0];
 			fileObject = new File(fileName);
 		}
@@ -79,24 +77,21 @@ public class TextBuddy {
 		if (!fileObject.exists()) {
 			fileObject.createNewFile();
 			// System.out.print(fileName + " has been created \n");
-		}
-
-		// To modify an existing text file
-		else if (fileObject.exists()) {
+		} else if (fileObject.exists()) {
+			// To modify an existing text file
 			System.out.print("Would you like to load and edit file? (Y/N)");
 			String choice = sc.nextLine();
-			if (choice.equalsIgnoreCase("N")) {
+		  }
+			if ((choice.equalsIgnoreCase("N")) {
 				System.exit(0);
-			}
-
-			else if (choice.equalsIgnoreCase("Y")) {
-				// To copy existing data to an arraylist
-				String[] previousData = oldData(fileObject);
-				for (int i = 0; i < previousData.length; i++) {
-					texts.add(previousData[i]);
-				}
-			}
-		}
+			} else if ((choice.equalsIgnoreCase("Y")) {
+			  // To copy existing data to an arraylist
+			  String[] previousData = oldData(fileObject);
+			  	for (int i = 0; i < previousData.length; i++) {
+			  		texts.add(previousData[i]);
+			  	}
+			  }
+		
 		showUser(String.format(MSG_WELCOME, fileName));
 		//System.out.println("Welcome to TextBuddy. " + fileName
 				//+ " is ready for use");
