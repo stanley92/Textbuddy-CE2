@@ -182,8 +182,14 @@ public class TextBuddy {
 	private static void deleteText(Scanner sc, ArrayList<String> texts,
 			String fileName) {
 		int deleteNo;
+		
+		if (sc.hasNext()) {
+			showUser(String.format(MSG_INVALID_PARAM, fileName));
+			return;
+		} else {
 		deleteNo = sc.nextInt();
-
+		}
+		
 		if (texts.size() == 0) {
 			showUser(String.format(MSG_EMPTY_FILE, fileName));
 			//System.out.println(fileName + " is empty. Nothing to be deleted.");
