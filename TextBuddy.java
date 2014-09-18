@@ -81,16 +81,17 @@ public class TextBuddy {
 			// To modify an existing text file
 			System.out.print("Would you like to load and edit file? (Y/N)");
 			String choice = sc.nextLine();
-		  }
-			if ((choice.equalsIgnoreCase("N")) {
+	
+			if (choice.equalsIgnoreCase("N")) {
 				System.exit(0);
-			} else if ((choice.equalsIgnoreCase("Y")) {
+			} else if (choice.equalsIgnoreCase("Y")) {
 			  // To copy existing data to an arraylist
 			  String[] previousData = oldData(fileObject);
 			  	for (int i = 0; i < previousData.length; i++) {
 			  		texts.add(previousData[i]);
 			  	}
 			  }
+		 }
 		
 		showUser(String.format(MSG_WELCOME, fileName));
 		//System.out.println("Welcome to TextBuddy. " + fileName
