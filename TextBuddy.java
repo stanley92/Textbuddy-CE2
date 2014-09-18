@@ -184,18 +184,18 @@ public class TextBuddy {
 		deleteNo = sc.nextInt();
 
 		if (texts.size() == 0) {
-			showUser
+			showUser(String.format(MSG_EMPTY_FILE, fileName));
 			//System.out.println(fileName + " is empty. Nothing to be deleted.");
 		}
 
 		else if (deleteNo - 1 >= texts.size()) {
-			showUser
+			showUser(MSG_INVALID_COMMAND);
 			//System.out.println("Invalid Command!");
 			return;
 		}
 
 		else {
-			showUser
+			showUser(String.format(MSG_DELETE, fileName, texts.get(deleteNo - 1)));
 			//System.out.println("deleted from " + fileName + " \""
 				//	+ texts.get(deleteNo - 1) + "\"");
 			texts.remove(deleteNo - 1);
