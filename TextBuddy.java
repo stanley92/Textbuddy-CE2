@@ -208,7 +208,7 @@ public class TextBuddy {
 		display = sc.nextLine();
 		display = display.trim();
 		texts.add(display);
-		showUser
+		showUser(String.format(MSG_ADD, fileName, display));
 		//System.out.println("added to " + fileName + " \"" + display + "\"");
 	}
 	
