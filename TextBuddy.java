@@ -174,7 +174,7 @@ public class TextBuddy {
 		while (!(texts.size() == 0)) {
 			texts.remove(texts.size() - 1);
 		}
-		showUser
+		showUser(String.format(MSG_CLEAR, fileName));
 		//System.out.println("All content is clear from " + fileName);
 	}
 
