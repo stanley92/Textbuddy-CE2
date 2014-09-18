@@ -46,7 +46,18 @@ import java.util.Scanner;
 
 
 public class TextBuddy {
-
+	
+	private static final String MSG_NO_ARGS = "No arguments!";
+	private static final String MSG_WELCOME = "Welcome to TextBuddy. %s is ready for use";
+	private static final String MSG_IO_OPERATION_FAILED = "I/O operation failed for %s. Please try again";
+	private static final String MSG_CMD_PROMPT = "command: ";
+	private static final String MSG_INVALID_CMD = "Invalid command";
+	private static final String MSG_INVALID_PARAM = "Invalid parameters for %s command";
+	private static final String MSG_ADD = "added to %s: \"%s\"";
+	private static final String MSG_DELETE = "deleted from %s: \"%s\"";
+	private static final String MSG_CLEAR = "all content deleted from %s";
+	private static final String MSG_EMPTY_FILE = "%s is empty";
+	
 	static File file_object = null;
 
 	public static void main(String[] args) throws IOException {
