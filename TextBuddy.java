@@ -55,7 +55,9 @@ public class TextBuddy {
 	private static final String MSG_DELETE = "deleted from %s: \"%s\"";
 	private static final String MSG_CLEAR = "all content deleted from %s";
 	private static final String MSG_EMPTY_FILE = "%s is empty";
-
+	
+	private static final String DISPLAY_FORMAT = "%d. %s";
+	
 	static File file_object = null;
 
 	public static void main(String[] args) throws IOException {
@@ -134,11 +136,11 @@ public class TextBuddy {
 
 	private static void displayTexts(ArrayList<String> texts, String fileName) {
 		if (texts.size() == 0) {
-			showUser
+			showUser(String.format(MSG_EMPTY_FILE, fileName));
 			//System.out.println(fileName + " is empty");
 		} else
 			for (int i = 0; i < texts.size(); i++) {
-				showUser
+				showUser(String.format(DISPLAY_FORMAT, i+1, texts.get(i)));
 				//System.out.println(i + 1 + ". " + texts.get(i));
 			}
 	}
