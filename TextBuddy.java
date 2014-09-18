@@ -97,9 +97,9 @@ public class TextBuddy {
 				}
 			}
 		}
-
-		System.out.println("Welcome to TextBuddy. " + fileName
-				+ " is ready for use");
+		showUser(String.format(MSG_WELCOME, fileName));
+		//System.out.println("Welcome to TextBuddy. " + fileName
+				//+ " is ready for use");
 
 		command_type(sc, texts, fileName);
 
