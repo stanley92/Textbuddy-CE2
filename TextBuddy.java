@@ -47,7 +47,6 @@ import java.util.Scanner;
 
 public class TextBuddy {
 	
-	private static final String MSG_NO_ARGS = "No arguments!";
 	private static final String MSG_WELCOME = "Welcome to TextBuddy. %s is ready for use";
 	private static final String MSG_IO_OPERATION_FAILED = "I/O operation failed for %s. Please try again";
 	private static final String MSG_CMD_PROMPT = "command: ";
