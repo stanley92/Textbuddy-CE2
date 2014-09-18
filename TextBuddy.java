@@ -61,16 +61,16 @@ public class TextBuddy {
 	static File fileObject = null;
 
 	public static void main(String[] args) throws IOException {
-		Scanner sc = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 		ArrayList<String> texts = new ArrayList<String>();
 		String fileName;
 
-		fileName = fileName(args, sc);
-		determineNewFileName(sc, texts);
+		fileName = fileName(args, scanner);
+		determineNewFileName(scanner, texts);
 		welcomeUser(fileName);
-		command_type(sc, texts, fileName);
+		command_type(scanner, texts, fileName);
 		saveData(texts, fileObject);
-		sc.close();
+		scanner.close();
 	}
 
 	private static void welcomeUser(String fileName) {
