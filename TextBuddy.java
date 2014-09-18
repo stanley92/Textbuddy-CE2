@@ -112,7 +112,8 @@ public class TextBuddy {
 			String fileName) {
 		String command;
 		do {
-			System.out.print("command: ");
+			showUser(MSG_COMMMAND_PROMPT);
+			//System.out.print("command: ");
 			command = sc.next();
 			if (command.equals("add")) {
 				addText(sc, texts, fileName);
