@@ -189,7 +189,7 @@ public class TextBuddy {
 		}
 
 		else if (deleteNo - 1 >= texts.size()) {
-			showUser(MSG_INVALID_COMMAND);
+			showUser(String.format(MSG_IO_OPERATION_FAILED, fileName));
 			//System.out.println("Invalid Command!");
 			return;
 		}
