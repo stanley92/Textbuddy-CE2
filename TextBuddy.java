@@ -48,8 +48,8 @@ public class TextBuddy {
 
 	private static final String MSG_WELCOME = "Welcome to TextBuddy. %s is ready for use";
 	private static final String MSG_IO_OPERATION_FAILED = "I/O operation failed for %s. Please try again";
-	private static final String MSG_CMD_PROMPT = "command: ";
-	private static final String MSG_INVALID_CMD = "Invalid command";
+	private static final String MSG_COMMMAND_PROMPT = "command: ";
+	private static final String MSG_INVALID_COMMAND = "Invalid command";
 	private static final String MSG_INVALID_PARAM = "Invalid parameters for %s command";
 	private static final String MSG_ADD = "added to %s: \"%s\"";
 	private static final String MSG_DELETE = "deleted from %s: \"%s\"";
@@ -125,7 +125,7 @@ public class TextBuddy {
 			} else if (command.equals("search")) {
 				searchTexts(sc, texts, fileName);
 			} else {
-				showUser
+				showUser(MSG_INVALID_COMMAND);
 				//System.out.println("Invalid Command!");
 			}
 		} while (!command.equals("exit"));
