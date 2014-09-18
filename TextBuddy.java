@@ -183,7 +183,7 @@ public class TextBuddy {
 			String fileName) {
 		int deleteNo;
 		
-		if (sc.hasNext()) {
+		if (!sc.hasNextInt()) {
 			showUser(String.format(MSG_INVALID_PARAM, fileName));
 			sc.next();
 			return;
