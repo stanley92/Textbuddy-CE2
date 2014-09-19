@@ -1,0 +1,131 @@
+[33mcommit db2da35cb19bcc104bc197093e9959e076b9fdb6[m
+Author: stanley92 <Stanley92@hotmail.com>
+Date:   Fri Sep 19 00:04:58 2014 +0800
+
+    edited commnad
+
+[33mcommit 9f9707f37acf73c66ea78f3797bd174bb3f0cf83[m
+Author: stanley92 <Stanley92@hotmail.com>
+Date:   Thu Sep 18 23:59:02 2014 +0800
+
+    refactor code 2
+
+[33mcommit 0ff1e761c7f3cf63695dc7e128f2378d12eb388e[m
+Author: stanley92 <Stanley92@hotmail.com>
+Date:   Thu Sep 18 23:57:43 2014 +0800
+
+    refactor code
+
+[33mcommit b5112a19d19293e4336a622513938d1d7feb1153[m
+Author: stanley92 <Stanley92@hotmail.com>
+Date:   Thu Sep 18 23:55:11 2014 +0800
+
+    resolved error in main function
+
+[33mcommit 39a36741ca338d9e732fee21b60cc972618da9e8[m
+Author: stanley92 <Stanley92@hotmail.com>
+Date:   Thu Sep 18 23:53:42 2014 +0800
+
+    edited main function
+
+[33mcommit f9674dcdc1728cb964f1c6ffa43aaf579c6cb843[m
+Author: stanley92 <Stanley92@hotmail.com>
+Date:   Thu Sep 18 23:45:47 2014 +0800
+
+    edited deleteTxt invalid parameter
+
+[33mcommit fa51f046c8d543d806b90d904aa46e0454b202a9[m
+Author: stanley92 <Stanley92@hotmail.com>
+Date:   Thu Sep 18 23:43:16 2014 +0800
+
+    edited deleteTxt to scan in invalid parameter
+
+[33mcommit 89e62df44b11d2fe35c1ed94bf588e628b1cf086[m
+Author: stanley92 <Stanley92@hotmail.com>
+Date:   Thu Sep 18 23:41:05 2014 +0800
+
+    edited deleteTxt to add invalid parameter
+
+[33mcommit 7791c2623d92332f179253755bcb729afb58b736[m
+Author: stanley92 <Stanley92@hotmail.com>
+Date:   Thu Sep 18 23:33:12 2014 +0800
+
+    renamed fileObject
+
+[33mcommit c72da6c029357ed09fbdf27a948df6395c72cc82[m
+Author: stanley92 <Stanley92@hotmail.com>
+Date:   Thu Sep 18 23:25:50 2014 +0800
+
+    fixed command prompt text
+
+[33mcommit 22bef64d2178b6584d0b392816d627d98c749975[m
+Author: stanley92 <Stanley92@hotmail.com>
+Date:   Thu Sep 18 23:25:08 2014 +0800
+
+    fixed operation fail to delete
+
+[33mcommit 48ca24cc4f1ae97e10aa2256bd676f712d4249be[m
+Author: stanley92 <Stanley92@hotmail.com>
+Date:   Thu Sep 18 23:23:06 2014 +0800
+
+    fixed welcome text
+
+[33mcommit 4d123bfc9f4e31c8d374f936b9913ca48602c94e[m
+Author: stanley92 <Stanley92@hotmail.com>
+Date:   Thu Sep 18 23:21:24 2014 +0800
+
+    fixed add text
+
+[33mcommit c650d35768da5c26937bcbf4dabac78595b4065f[m
+Author: stanley92 <Stanley92@hotmail.com>
+Date:   Thu Sep 18 23:20:14 2014 +0800
+
+    fixed delete text
+
+[33mcommit 68e399bd4ff58d9f0b021aab0878fbba20d50345[m
+Author: stanley92 <Stanley92@hotmail.com>
+Date:   Thu Sep 18 23:16:08 2014 +0800
+
+    fixed clear text
+
+[33mcommit c21afad74b3c788cb74d879422ebe9468d8ac80a[m
+Author: stanley92 <Stanley92@hotmail.com>
+Date:   Thu Sep 18 23:15:18 2014 +0800
+
+    fixed search text
+
+[33mcommit dbd477e924724fb742d6b59fc64a4662330e3070[m
+Author: stanley92 <Stanley92@hotmail.com>
+Date:   Thu Sep 18 23:13:54 2014 +0800
+
+    fixed display text
+
+[33mcommit be50447fbdcdaaa758de8f9ff11b0d57c19c98bb[m
+Author: stanley92 <Stanley92@hotmail.com>
+Date:   Thu Sep 18 23:09:59 2014 +0800
+
+    fixed invalid command
+
+[33mcommit 980a1c65f7abc8a2e840d302a45203300fa52883[m
+Author: stanley92 <Stanley92@hotmail.com>
+Date:   Thu Sep 18 23:07:14 2014 +0800
+
+    Edited Printing Statement
+
+[33mcommit 58a9a13089817927e29f9cd40e0dd39aab42f96a[m
+Author: stanley92 <Stanley92@hotmail.com>
+Date:   Thu Sep 18 22:43:32 2014 +0800
+
+    Edited Msg
+
+[33mcommit 33dc144405ec4bcca62399affbd874bf53b39661[m
+Author: stanley92 <Stanley92@hotmail.com>
+Date:   Thu Sep 18 22:40:47 2014 +0800
+
+    added Message
+
+[33mcommit ad424da013ca9271f9ab7a844678aa0cb017e343[m
+Author: stanley92 <Stanley92@hotmail.com>
+Date:   Thu Sep 18 18:50:21 2014 +0800
+
+    Initial File from CE1

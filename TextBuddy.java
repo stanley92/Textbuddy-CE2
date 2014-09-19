@@ -68,7 +68,7 @@ public class TextBuddy {
 		fileName = fileName(args, scanner);
 		determineNewFileName(scanner, texts);
 		welcomeUser(fileName);
-		command_type(scanner, texts, fileName);
+		executeCommand(scanner, texts, fileName);
 		saveData(texts, fileObject);
 		scanner.close();
 	}
@@ -114,7 +114,7 @@ public class TextBuddy {
 		return fileName;
 	}
 
-	private static void command_type(Scanner sc, ArrayList<String> texts,
+	private static void executeCommand(Scanner sc, ArrayList<String> texts,
 			String fileName) {
 		String command;
 		do {
