@@ -229,7 +229,7 @@ public class TextBuddy {
 	}
 	
 	public static void showUser(String text){
-		System.out .println(text);
+		System.out.println(text);
 		}
 
 	public static void saveData(ArrayList<String> arr, File file_object)
