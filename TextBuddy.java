@@ -73,13 +73,13 @@ public class TextBuddy {
 		scanner.close();
 	}
 
-	private static void welcomeUser(String fileName) {
+	public static void welcomeUser(String fileName) {
 		showUser(String.format(MSG_WELCOME, fileName));
 		//System.out.println("Welcome to TextBuddy. " + fileName
 				//+ " is ready for use");
 	}
 
-	private static void determineNewFileName(Scanner sc, ArrayList<String> texts)
+	public static void determineNewFileName(Scanner sc, ArrayList<String> texts)
 			throws IOException {
 		// Create new text file
 		if (!fileObject.exists()) {
@@ -102,7 +102,7 @@ public class TextBuddy {
 		 }
 	}
 
-	private static String fileName(String[] args, Scanner sc) {
+	public static String fileName(String[] args, Scanner sc) {
 		String fileName;
 		if (args.length < 1) {
 			fileName = sc.next();
@@ -114,7 +114,7 @@ public class TextBuddy {
 		return fileName;
 	}
 
-	private static void executeCommand(Scanner sc, ArrayList<String> texts,
+	public static void executeCommand(Scanner sc, ArrayList<String> texts,
 			String fileName) {
 		String command;
 		do {
@@ -143,7 +143,7 @@ public class TextBuddy {
 
 	}
 
-	private static void displayTexts(ArrayList<String> texts, String fileName) {
+	public static void displayTexts(ArrayList<String> texts, String fileName) {
 		if (texts.size() == 0) {
 			showUser(String.format(MSG_EMPTY_FILE, fileName));
 			//System.out.println(fileName + " is empty");
@@ -154,11 +154,11 @@ public class TextBuddy {
 			}
 	}
 
-	private static void sortTexts(ArrayList<String> texts, String fileName) {
+	public static void sortTexts(ArrayList<String> texts, String fileName) {
 		Collections.sort(texts);
 	}
 
-	private static void searchTexts(Scanner sc, ArrayList<String> texts,
+	public static void searchTexts(Scanner sc, ArrayList<String> texts,
 			String fileName) {
 
 		if (texts.size() == 0) {
@@ -179,7 +179,7 @@ public class TextBuddy {
 		}
 	}
 
-	private static void clearTexts(ArrayList<String> texts, String fileName) {
+	public static void clearTexts(ArrayList<String> texts, String fileName) {
 		while (!(texts.size() == 0)) {
 			texts.remove(texts.size() - 1);
 		}
@@ -187,7 +187,7 @@ public class TextBuddy {
 		//System.out.println("All content is clear from " + fileName);
 	}
 
-	private static void deleteText(Scanner sc, ArrayList<String> texts,
+	public static void deleteText(Scanner sc, ArrayList<String> texts,
 			String fileName) {
 		int deleteNo;
 		
@@ -218,7 +218,7 @@ public class TextBuddy {
 		}
 	}
 
-	private static void addText(Scanner sc, ArrayList<String> texts,
+	public static void addText(Scanner sc, ArrayList<String> texts,
 			String fileName) {
 		String text;
 		text = sc.nextLine();
@@ -228,11 +228,11 @@ public class TextBuddy {
 		//System.out.println("added to " + fileName + " \"" + display + "\"");
 	}
 	
-	private static void showUser(String text){
+	public static void showUser(String text){
 		System.out .println(text);
 		}
 
-	private static void saveData(ArrayList<String> arr, File file_object)
+	public static void saveData(ArrayList<String> arr, File file_object)
 			throws FileNotFoundException {
 		PrintWriter write = new PrintWriter(file_object);
 		for (int i = 0; i < arr.size(); i++) {
@@ -241,7 +241,7 @@ public class TextBuddy {
 		write.close();
 	}
 
-	private static String[] oldData(File file_object) throws IOException {
+	public static String[] oldData(File file_object) throws IOException {
 		FileReader fr = new FileReader(file_object);
 		BufferedReader textReader = new BufferedReader(fr);
 		int numberOfLines = readLines(file_object);
@@ -253,7 +253,7 @@ public class TextBuddy {
 		return textData;
 	}
 
-	private static int readLines(File file_object) throws IOException {
+	public static int readLines(File file_object) throws IOException {
 		FileReader fileToRead = new FileReader(file_object);
 		BufferedReader bf = new BufferedReader(fileToRead);
 		int numberOfLines = 0;
